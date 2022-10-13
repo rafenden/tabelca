@@ -1,0 +1,15 @@
+title: Tabelca
+email: github@tabelca.com
+description: Compare products and services in tabular data.
+baseurl: ""
+url: ""
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
