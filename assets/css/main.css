@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+html {
+  font-family: "Bitstream Vera Sans Mono", Consolas, monospace;
+}
+
+td {
+  white-space: nowrap;
+}

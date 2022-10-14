@@ -6,7 +6,7 @@ Compare products and services in tabular data.
 
 1. Install dependencies
 ```shell
-bundle install 
+bundle install --path vendor/bundle
 ```
 2. Start the server
 ```shell
