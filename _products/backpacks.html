@@ -1,0 +1,36 @@
+---
+layout: product
+title: Backpacks
+permalink: /backpacks
+data_source: backpacks.csv
+---
+
+<table class="sortable">
+  <thead>
+    <tr>
+      <th>Backpack</th>
+      <th>Capacity</th>
+      <th>Weight (KG)</th>
+      <th>Weight (LBS)</th>
+      <th>Size (CM)</th>
+      <th>Price</th>
+      <th>Warranty</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for backpack in site.data.backpacks %}
+    <tr>
+      <td><a href="{{backpack.url}}">{{backpack.name}}</a></td>
+      <td>{{backpack.capacity}}</td>
+      <td>{{backpack.weight_kg}}</td>
+      <td>{{backpack.weight_lbs}}</td>
+      <td>{{backpack.size}}</td>
+      <td>{{backpack.price}}</td>
+      <td>{{backpack.warranty}}</td>
+      <td>{{backpack.notes}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
