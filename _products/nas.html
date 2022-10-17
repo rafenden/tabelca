@@ -1,0 +1,44 @@
+---
+layout: products
+title: NAS
+permalink: /nas
+data_source: nas.csv
+---
+
+<table class="sortable asc">
+  <thead>
+    <tr>
+      <th>NAS</th>
+      <th>Release year</th>
+      <th>Amazon rating</th>
+      <th>Bays</th>
+      <th>Hardware Transcoding</th>
+      <th>CPU</th>
+      <th>RAM (GB)</th>
+      <th>PCie Speed (x-times)</th>
+      <th>Power Consumption (W)</th>
+      <th>Read Speed (MB/s)</th>
+      <th>Price</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for nas in site.data.nas %}
+    <tr>
+      <td><a href="{{nas.url}}">{{nas.name}}</a></td>
+      <td>{{nas.release_year}}</td>
+      <td>{{nas.amazon_rating}}</td>
+      <td>{{nas.bays}}</td>
+      <td>{{nas.hardware_transcoding}}</td>
+      <td>{{nas.cpu}}</td>
+      <td>{{nas.ram}}</td>
+      <td>{{nas.pcie_speed}}</td>
+      <td>{{nas.power_consumption}}</td>
+      <td>{{nas.read_speed}}</td>
+      <td data-sort="{{nas.price}}">{{nas.price}} {{nas.price_currency}}</td>
+      <td>{{nas.notes}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
