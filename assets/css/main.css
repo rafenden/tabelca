@@ -4,6 +4,10 @@ html {
   font-family: "Bitstream Vera Sans Mono", Consolas, monospace;
 }
 
+body {
+  padding-bottom: 5%;
+}
+
 td {
   white-space: nowrap;
 }
