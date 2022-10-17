@@ -28,7 +28,7 @@ data_source: headphones.csv
       <td>{{headphone.simultaneous_connections}}</td>
       <td>{{headphone.bluetooth_version}}</td>
       <td>{{headphone.bluetooth_class}}</td>
-      <td>{{headphone.price}}</td>
+      <td data-sort="{{headphone.price}}">{{headphone.price}} {{headphone.price_currency}}</td>
       <td>{{headphone.notes}}</td>
     </tr>
     {% endfor %}
