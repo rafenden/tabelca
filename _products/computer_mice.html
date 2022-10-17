@@ -1,0 +1,34 @@
+---
+layout: products
+title: Computer Mice
+permalink: /computer-mice
+data_source: computer-mice.csv
+---
+
+<table class="sortable asc">
+    <thead>
+    <tr>
+        <th>Mouse</th>
+        <th>Sensor</th>
+        <th>DPI (MAX)</th>
+        <th>Pooling Rate (HZ)</th>
+        <th>Weight (G)</th>
+        <th>Price</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for mice in site.data.computer_mice %}
+    <tr>
+        <td><a href="{{mice.url}}">{{mice.name}}</a></td>
+        <td>{{mice.sensor}}</td>
+        <td>{{mice.dpi}}</td>
+        <td>{{mice.pooling_rate}}</td>
+        <td>{{mice.weight_g}}</td>
+        <td data-sort="{{mice.price}}">{{mice.price}} {{mice.price_currency}}</td>
+        <td>{{mice.notes}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
