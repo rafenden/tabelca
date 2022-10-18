@@ -26,19 +26,7 @@ reasons why it's beneficial to use a water flosser.
     <tbody>
     {% for water_flosser in site.data.water_flossers %}
     <tr>
-        <td>
-            {% if water_flosser.url %}
-            <a href="{{water_flosser.url}}">{{water_flosser.name}}</a>
-            {% else %}
-            {{water_flosser.name}}
-            {% endif %}
-            {% if water_flosser.manual %}
-            <a href="{{water_flosser.manual}}">manual</a>
-            {% endif %}
-            {% if water_flosser.amazon_uk %}
-            <a href="{{water_flosser.amazon_uk}}">amazon.co.uk</a>
-            {% endif %}
-        </td>
+        <td>{% include product_name.html product=water_flosser %}</td>
         <td>{{water_flosser.pressure_kpa}}</td>
         <td>{{water_flosser.pressure_psi}}</td>
         <td>{{water_flosser.strokes}}</td>

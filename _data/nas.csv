@@ -1,20 +1,20 @@
-name,release_year,amazon_rating,bays,hardware_transcoding,cpu,ram,pcie_speed,power_consumption,read_speed,price,price_currency,notes,url
-WD My Cloud EX2 Ultra,,4.1,,No,Marvell ARMADA 385 1.3GHz dual-core,1,,,,,,"Not customizable, outdated software",https://www.wd.com/products/network-attached-storage/my-cloud-expert-series-ex2-ultra.html
-Synology DS218j,,4.3,,No,,,,,112,,,,https://www.synology.com/en-us/products/DS218j
-Synology DS218+ (2 bay),,4.3,2,Yes,Intel Celeron J3355 Dual Core 2.0 burst up to 2.5 GHz,2 (expandable to 6),,17.23,113,,,,https://www.synology.com/en-uk/products/DS218+
-Synology DS718+ (2 bay),,5,2,Yes,Intel Celeron J3455 Quad Core 1.5 burst up to 2.3 GHz,2 (expandable to 6),,20.1,226,,,,https://www.synology.com/en-uk/products/DS718+#specs
-Synology DS918+ (4 bay),,4.8,4,Yes,Intel Celeron J3455 Quad Core 1.5 burst up to 2.3 GHz,4 (expandable to 8),,28.8,225,,,,https://www.synology.com/en-uk/products/DS918+
-Synology DS1019+,,4.4,5,,Intel Celeron J3455 Quad Core 1.5 burst up to 2.3 GHz,8,,38.59,,,,,https://www.synology.com/en-us/products/DS1019+
-Synology DS1618+,,4.4,,,Intel Atom C3538 Quad Core 2.1 GHz,4 (expandable to 32),,,, 829 ,GBP,,https://www.synology.com/en-uk/products/DS1618+
-Synology DVA3219,,,4,,Intel Atom C3538 Quad Core 2.1 GHz,8 (expandable to 32),,53.78,," 1779 ",GBP,,https://www.synology.com/en-global/products/DVA3219
-QNAP TS-473,,4.7,4,,AMD R-Series RX-421ND quad-core 2.1 GHz processor ,4 (expandable to 32),4,56.23,, 682.80 ,GBP,,https://www.qnap.com/en-uk/product/ts-473
-QNAP TS-673,,,,,AMD R-Series RX-421ND 4-core 2.1 GHz processor,4 (expandable to 64),4,63.69,,,,,https://www.qnap.com/en-uk/product/ts-673
-QNAP TS-473e,,5,4,,AMD R-Series RX-421BD quad-core 2.1 GHz processor,8 (expandable to 64),4,56.23,, 840 ,GBP,,https://www.qnap.com/en/product/tvs-473e
-QNAP TVS-472XT,2018,,4,,Intel® Pentium G5400T 2-core 3.1 GHz Processor,4 (expandable to 32),16,37.32,," 1178.99 ",GBP,"Supports 10 gb/s, has smaller PCie port",https://www.qnap.com/en-uk/product/tvs-472xt
-QNAP TVS-672N,,4.5,6,,Intel® Core™ i3-8100T 4-core 3.1 GHz Processor,4 (expandable to 32),16,45.6,," 1380.16 ",GBP,"Supports 10 gb/s, has smaller PCie port",https://www.qnap.com/en-uk/product/tvs-672n
-QNAP TVS-672XT,2018,,,,Intel® Core™ i3-8100T 4-core 3.1 GHz Processor,4 (expandable to 32),16,45.6,,,,"Supports 10 gb/s, has smaller PCie port",https://preview.qnap.com/en-uk/product/tvs-672xt
-QNAP TVS-682,2016,2.4,6,,Intel® Core™ i3-7100 dual-core 3.9 GHz processor,8 (expandable to 64),16,46.65,," 1234.98 ",GBP,,https://www.qnap.com/en-uk/product/tvs-682
-QNAP TVS-882,,,,,Intel® Core™ i3-7100 dual-core 3.9 GHz processor,8 (expandable to 64),16,58.63,,,,,https://www.qnap.com/en-uk/product/tvs-882
-QNAP TVS-682T,,,6,,Intel® Core™ i3-7100 dual-core 3.9 GHz processor,8 (expandable to 64),16,76.65,," 1670 ",GBP,,https://www.qnap.com/en/product/tvs-682t
-QNAP TS-677,2017,,6,,AMD Ryzen™ 5 1600 6-core/12-thread 3.2 GHz processor,8 (expandable to 64),8,54.9,,1550,GBP,,https://www.qnap.com/en/product/ts-677
-QNAP TS-877,2017,,8,,AMD Ryzen™ 5 1600 6-core/12-thread 3.2 GHz processor ,8 (expandable to 64),8,61.75,,,,,https://www.qnap.com/en/product/ts-877
+name,release_year,bays,hardware_transcoding,cpu,ram,pcie_speed,power_consumption,read_speed,price,price_currency,notes,url,amazon
+WD My Cloud EX2 Ultra,,,No,Marvell ARMADA 385 1.3GHz dual-core,1,,,,,,"Not customizable, outdated software",https://www.wd.com/products/network-attached-storage/my-cloud-expert-series-ex2-ultra.html,B01BIGSSHQ
+Synology DS218j,,,No,,,,,112,,,,https://www.synology.com/en-us/products/DS218j,B077DFXN2B
+Synology DS218+ (2 bay),,2,Yes,Intel Celeron J3355 Dual Core 2.0 burst up to 2.5 GHz,2 (expandable to 6),,17.23,113,,,,https://www.synology.com/en-uk/products/DS218+,B075L82DP1
+Synology DS718+ (2 bay),,2,Yes,Intel Celeron J3455 Quad Core 1.5 burst up to 2.3 GHz,2 (expandable to 6),,20.1,226,,,,https://www.synology.com/en-uk/products/DS718+#specs,B075DB49FN
+Synology DS918+ (4 bay),,4,Yes,Intel Celeron J3455 Quad Core 1.5 burst up to 2.3 GHz,4 (expandable to 8),,28.8,225,,,,https://www.synology.com/en-uk/products/DS918+,B075DDZ894
+Synology DS1019+,,5,,Intel Celeron J3455 Quad Core 1.5 burst up to 2.3 GHz,8,,38.59,,,,,https://www.synology.com/en-us/products/DS1019+,B07MBCK2WF
+Synology DS1618+,,,,Intel Atom C3538 Quad Core 2.1 GHz,4 (expandable to 32),,,, 829 ,GBP,,https://www.synology.com/en-uk/products/DS1618+,B07CR8RZYY
+Synology DVA3219,,4,,Intel Atom C3538 Quad Core 2.1 GHz,8 (expandable to 32),,53.78,, 1779 ,GBP,,https://www.synology.com/en-global/products/DVA3219,B07WDKL222
+QNAP TS-473,,4,,AMD R-Series RX-421ND quad-core 2.1 GHz processor ,4 (expandable to 32),4,56.23,, 682.80 ,GBP,,https://www.qnap.com/en-uk/product/ts-473,B07BQ9VF4Z
+QNAP TS-673,,,,AMD R-Series RX-421ND 4-core 2.1 GHz processor,4 (expandable to 64),4,63.69,,,,,https://www.qnap.com/en-uk/product/ts-673,
+QNAP TS-473e,,4,,AMD R-Series RX-421BD quad-core 2.1 GHz processor,8 (expandable to 64),4,56.23,, 840 ,GBP,,https://www.qnap.com/en/product/tvs-473e,B078YYYG8D
+QNAP TVS-472XT,2018,4,,Intel® Pentium G5400T 2-core 3.1 GHz Processor,4 (expandable to 32),16,37.32,, 1178.99 ,GBP,"Supports 10 gb/s, has smaller PCie port",https://www.qnap.com/en-uk/product/tvs-472xt,B07JH4C3GC
+QNAP TVS-672N,,6,,Intel® Core™ i3-8100T 4-core 3.1 GHz Processor,4 (expandable to 32),16,45.6,, 1380.16 ,GBP,"Supports 10 gb/s, has smaller PCie port",https://www.qnap.com/en-uk/product/tvs-672n,B07XC98GGZ
+QNAP TVS-672XT,2018,,,Intel® Core™ i3-8100T 4-core 3.1 GHz Processor,4 (expandable to 32),16,45.6,,,,"Supports 10 gb/s, has smaller PCie port",https://preview.qnap.com/en-uk/product/tvs-672xt,
+QNAP TVS-682,2016,6,,Intel® Core™ i3-7100 dual-core 3.9 GHz processor,8 (expandable to 64),16,46.65,, 1234.98 ,GBP,,https://www.qnap.com/en-uk/product/tvs-682,B01HJUSVB8
+QNAP TVS-882,,,,Intel® Core™ i3-7100 dual-core 3.9 GHz processor,8 (expandable to 64),16,58.63,,,,,https://www.qnap.com/en-uk/product/tvs-882,
+QNAP TVS-682T,,6,,Intel® Core™ i3-7100 dual-core 3.9 GHz processor,8 (expandable to 64),16,76.65,, 1670 ,GBP,,https://www.qnap.com/en/product/tvs-682t,
+QNAP TS-677,2017,6,,AMD Ryzen™ 5 1600 6-core/12-thread 3.2 GHz processor,8 (expandable to 64),8,54.9,,1550,GBP,,https://www.qnap.com/en/product/ts-677,B0777KXCP9
+QNAP TS-877,2017,8,,AMD Ryzen™ 5 1600 6-core/12-thread 3.2 GHz processor ,8 (expandable to 64),8,61.75,,,,,https://www.qnap.com/en/product/ts-877,

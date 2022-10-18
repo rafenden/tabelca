@@ -21,7 +21,7 @@ data_source: computer_mice.csv
     <tbody>
     {% for mice in site.data.computer_mice %}
     <tr>
-        <td><a href="{{mice.url}}">{{mice.name}}</a></td>
+        <td>{% include product_name.html product=mice %}</td>
         <td>{{mice.sensor}}</td>
         <td>{{mice.dpi}}</td>
         <td>{{mice.pooling_rate}}</td>

@@ -22,7 +22,7 @@ data_source: backpacks.csv
   <tbody>
     {% for backpack in site.data.backpacks %}
     <tr>
-      <td><a href="{{backpack.url}}">{{backpack.name}}</a></td>
+      <td>{% include product_name.html product=backpack %}</td>
       <td>{{backpack.capacity}}</td>
       <td>{{backpack.weight_kg}}</td>
       <td>{{backpack.weight_lbs}}</td>

@@ -23,7 +23,7 @@ data_source: earbuds.csv
   <tbody>
     {% for earbuds in site.data.earbuds %}
     <tr>
-      <td><a href="{{earbuds.url}}">{{earbuds.name}}</a></td>
+      <td>{% include product_name.html product=earbuds %}</td>
       <td>{{earbuds.battery_life}}</td>
       <td>{{earbuds.battery_life_case}}</td>
       <td>{{earbuds.weight_g}}</td>

@@ -26,7 +26,7 @@ data_source: nas.csv
   <tbody>
     {% for nas in site.data.nas %}
     <tr>
-      <td><a href="{{nas.url}}">{{nas.name}}</a></td>
+      <td>{% include product_name.html product=nas %}</td>
       <td>{{nas.release_year}}</td>
       <td>{{nas.amazon_rating}}</td>
       <td>{{nas.bays}}</td>

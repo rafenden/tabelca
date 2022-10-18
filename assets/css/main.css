@@ -11,3 +11,8 @@ body {
 td {
   white-space: nowrap;
 }
+
+.product--purchase-links {
+  margin-top: 1%;
+  font-size: 80%;
+}
