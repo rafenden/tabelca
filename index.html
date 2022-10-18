@@ -3,13 +3,13 @@ layout: default
 ---
 
 <ul class="product-list">
-    {%- for product in site.products -%}
-    <li>
-        <h3>
-            <a class="product-link" href="{{ product.url | prepend: site.baseurl }}">
-                {{ product.title | escape }}
-            </a>
-        </h3>
-    </li>
-    {%- endfor -%}
+  {%- for product in site.products -%}
+  <li>
+    <h3>
+      <a class="product-link" href="{{ product.url | prepend: site.baseurl }}">
+        {{ product.title | escape }}
+      </a>
+    </h3>
+  </li>
+  {%- endfor -%}
 </ul>
