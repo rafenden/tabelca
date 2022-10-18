@@ -11,7 +11,7 @@ data_source: earbuds.csv
       <th>Earbuds</th>
       <th>Battery Life (Earbuds)</th>
       <th>Battery Life (Charging Case)</th>
-      <th>Weight (G)</th>
+      <th>Weight</th>
       <th>Simultaneous Connections</th>
       <th>Bluetooth Version</th>
       <th>Bluetooth Class</th>
@@ -26,7 +26,7 @@ data_source: earbuds.csv
       <td>{% include product_name.html product=earbuds %}</td>
       <td>{{earbuds.battery_life}}</td>
       <td>{{earbuds.battery_life_case}}</td>
-      <td>{{earbuds.weight_g}}</td>
+      <td>{% include product_weight.html product=earbuds %}</td>
       <td>{{earbuds.simultaneous_connections}}</td>
       <td>{{earbuds.bluetooth_version}}</td>
       <td>{{earbuds.bluetooth_class}}</td>

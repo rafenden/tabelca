@@ -17,3 +17,19 @@ td, th {
   margin-top: 1%;
   font-size: 80%;
 }
+
+ul.product--weight {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: table;
+}
+ul.product--weight li {
+  display: table-cell;
+}
+
+ul.product--weight li:nth-child(even):before {
+  padding: 0 10px;
+  content: "|";
+}

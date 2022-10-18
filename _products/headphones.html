@@ -8,9 +8,9 @@ data_source: headphones.csv
 <table class="sortable asc">
   <thead>
     <tr>
-      <th>Heaphones</th>
+      <th>Headphones</th>
       <th>Battery Life</th>
-      <th>Weight (G)</th>
+      <th>Weight</th>
       <th>Simultaneous Connections</th>
       <th>Bluetooth Version</th>
       <th>Bluetooth Class</th>
@@ -24,7 +24,7 @@ data_source: headphones.csv
     <tr>
       <td>{% include product_name.html product=headphone %}</td>
       <td>{{headphone.battery_life}}</td>
-      <td>{{headphone.weight_g}}</td>
+      <td>{% include product_weight.html product=headphone %}</td>
       <td>{{headphone.simultaneous_connections}}</td>
       <td>{{headphone.bluetooth_version}}</td>
       <td>{{headphone.bluetooth_class}}</td>
