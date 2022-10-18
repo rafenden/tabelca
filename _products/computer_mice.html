@@ -32,7 +32,7 @@ Reference table for correlation between mouse polling rate and response time:
         <th>Sensor</th>
         <th>DPI (MAX)</th>
         <th>Pooling Rate (HZ)</th>
-        <th>Weight (G)</th>
+        <th>Weight</th>
         <th>Price</th>
         <th>Notes</th>
     </tr>
@@ -45,7 +45,7 @@ Reference table for correlation between mouse polling rate and response time:
         <td>{{mice.sensor}}</td>
         <td>{{mice.dpi}}</td>
         <td>{{mice.pooling_rate}}</td>
-        <td>{{mice.weight_g}}</td>
+        <td>{% include product_weight.html product=mice %}</td>
         <td data-sort="{{mice.price}}">{{mice.price}} {{mice.price_currency}}</td>
         <td>{{mice.notes}}</td>
     </tr>
