@@ -4,8 +4,6 @@ description: Compare products and services in tabular data.
 baseurl: ""
 url: ""
 markdown: kramdown
-plugins:
-  - jekyll-feed
 collections:
   products:
     output: true
