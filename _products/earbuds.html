@@ -1,0 +1,38 @@
+---
+layout: products
+title: Earbuds
+permalink: /earbuds
+data_source: earbuds.csv
+---
+
+<table class="sortable asc">
+  <thead>
+    <tr>
+      <th>Earbuds</th>
+      <th>Battery Life (Earbuds)</th>
+      <th>Battery Life (Charging Case)</th>
+      <th>Weight (G)</th>
+      <th>Simultaneous Connections</th>
+      <th>Bluetooth Version</th>
+      <th>Bluetooth Class</th>
+      <th>Price</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for earbuds in site.data.earbuds %}
+    <tr>
+      <td><a href="{{earbuds.url}}">{{earbuds.name}}</a></td>
+      <td>{{earbuds.battery_life}}</td>
+      <td>{{earbuds.battery_life_case}}</td>
+      <td>{{earbuds.weight_g}}</td>
+      <td>{{earbuds.simultaneous_connections}}</td>
+      <td>{{earbuds.bluetooth_version}}</td>
+      <td>{{earbuds.bluetooth_class}}</td>
+      <td data-sort="{{earbuds.price}}">{{earbuds.price}} {{earbuds.price_currency}}</td>
+      <td>{{earbuds.notes}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
