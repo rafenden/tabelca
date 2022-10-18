@@ -8,8 +8,9 @@ body {
   padding-bottom: 5%;
 }
 
-td {
+td, th {
   white-space: nowrap;
+  padding: 5px 10px;
 }
 
 .product--purchase-links {
