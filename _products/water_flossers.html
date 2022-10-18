@@ -1,0 +1,38 @@
+---
+layout: products
+title: Water Flossers
+permalink: /water-flossers
+data_source: water_flossers.csv
+---
+
+<p>
+Please read a <a href="https://www.aegisdentalnetwork.com/cced/2012/04/relevance-of-the-water-flosser-50-years-of-data">
+research paper by Deborah M. Lyle titled &quot;Relevance of the Water Flosser: 50 Years of Data&quot;</a> outlining many
+reasons why it's beneficial to use a water flosser.
+</p>
+
+<table class="sortable asc">
+    <thead>
+    <tr>
+        <th>Water Flosser</th>
+        <th>Pressure (kPa)</th>
+        <th>Pressure (PSI)</th>
+        <th>Strokes (n/min)</th>
+        <th>Tank (ml)</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for water_flosser in site.data.water_flossers %}
+    <tr>
+        <td>{% include product_name.html product=water_flosser %}</td>
+        <td>{{water_flosser.pressure_kpa}}</td>
+        <td>{{water_flosser.pressure_psi}}</td>
+        <td>{{water_flosser.strokes}}</td>
+        <td>{{water_flosser.tank}}</td>
+        <td>{{water_flosser.notes}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>

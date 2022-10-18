@@ -1,0 +1,18 @@
+{% if include.product.url %}
+<a href="{{include.product.url}}">{{include.product.name}}</a>
+{% else %}
+{{include.product.name}}
+{% endif %}
+
+{% if include.product.manual %}
+(<a href="{{include.product.manual}}">manual</a>)
+{% endif %}
+
+{% if include.product.amazon %}
+<div class="product--purchase-links">
+  <a href="https://www.amazon.com/gp/product/{{include.product.amazon}}">amazon.com</a>
+  <a href="https://www.amazon.pl/gp/product/{{include.product.amazon}}">amazon.pl</a>
+  <a href="https://www.amazon.co.uk/gp/product/{{include.product.amazon}}">amazon.uk</a>
+  <a href="https://www.amazon.de/gp/product/{{include.product.amazon}}">amazon.de</a>
+</div>
+{% endif %}

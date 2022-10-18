@@ -4,6 +4,16 @@ html {
   font-family: "Bitstream Vera Sans Mono", Consolas, monospace;
 }
 
-td {
+body {
+  padding-bottom: 5%;
+}
+
+td, th {
   white-space: nowrap;
+  padding: 5px 10px;
+}
+
+.product--purchase-links {
+  margin-top: 1%;
+  font-size: 80%;
 }

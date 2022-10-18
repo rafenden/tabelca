@@ -1,0 +1,36 @@
+---
+layout: products
+title: Headphones
+permalink: /headphones
+data_source: headphones.csv
+---
+
+<table class="sortable asc">
+  <thead>
+    <tr>
+      <th>Heaphones</th>
+      <th>Battery Life</th>
+      <th>Weight (G)</th>
+      <th>Simultaneous Connections</th>
+      <th>Bluetooth Version</th>
+      <th>Bluetooth Class</th>
+      <th>Price</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for headphone in site.data.headphones %}
+    <tr>
+      <td>{% include product_name.html product=headphone %}</td>
+      <td>{{headphone.battery_life}}</td>
+      <td>{{headphone.weight_g}}</td>
+      <td>{{headphone.simultaneous_connections}}</td>
+      <td>{{headphone.bluetooth_version}}</td>
+      <td>{{headphone.bluetooth_class}}</td>
+      <td data-sort="{{headphone.price}}">{{headphone.price}} {{headphone.price_currency}}</td>
+      <td>{{headphone.notes}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
