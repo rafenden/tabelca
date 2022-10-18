@@ -1,21 +1,32 @@
 <ul class="product--weight">
+  <!-- G -->
   {% if include.product.weight_g %}
   <li>{{ include.product.weight_g }} g</li>
+  {% elsif include.product.weight_oz %}
+  <li>{{ include.product.weight_oz | divided_by: 0.035274 | round: 2 }} oz</li>
   {% endif %}
 
+  <!-- OZ -->
   {% if include.product.weight_oz %}
   <li>{{ include.product.weight_oz }} oz</li>
-  {% endif %}
-
-  {% if include.product.weight_g && !include.product.weight_oz %}
+  <!-- Calculate OZ from G  -->
+  {% elsif include.product.weight_g %}
   <li>{{ include.product.weight_g | times: 0.035274 | round: 2 }} oz</li>
   {% endif %}
 
+  <!-- KG  -->
   {% if include.product.weight_kg %}
   <li>{{ include.product.weight_kg }} kg</li>
+  <!-- Calculate KG from LB  -->
+  {% elsif include.product.weight_lb %}
+  <li>{{ include.product.weight_lb | times: 0.45359237 | round: 2 }} kg</li>
   {% endif %}
 
+  <!-- LB  -->
   {% if include.product.weight_lb %}
   <li>{{ include.product.weight_lb }} lb</li>
+  <!-- Calculate LB from KG  -->
+  {% elsif include.product.weight_kg %}
+  <li>{{ include.product.weight_kg | divided_by: 0.45359237 | round: 2 }} lb</li>
   {% endif %}
 </ul>
