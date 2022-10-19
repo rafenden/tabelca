@@ -15,8 +15,7 @@ reasons why it's beneficial to use a water flosser.
     <thead>
     <tr>
         <th>Water Flosser</th>
-        <th>Pressure (kPa)</th>
-        <th>Pressure (PSI)</th>
+        <th>Pressure</th>
         <th>Strokes (n/min)</th>
         <th>Tank (ml)</th>
         <th>Notes</th>
@@ -27,8 +26,7 @@ reasons why it's beneficial to use a water flosser.
     {% for water_flosser in site.data.water_flossers %}
     <tr>
         <td>{% include product_name.html product=water_flosser %}</td>
-        <td>{{water_flosser.pressure_kpa}}</td>
-        <td>{{water_flosser.pressure_psi}}</td>
+        <td>{% include product_pressure.html product=water_flosser %}</td>
         <td>{{water_flosser.strokes}}</td>
         <td>{{water_flosser.tank}}</td>
         <td>{{water_flosser.notes}}</td>

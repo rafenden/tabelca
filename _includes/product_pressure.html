@@ -1,0 +1,17 @@
+<ul class="product--units">
+  <!-- kPa -->
+  {% if include.product.pressure_kpa %}
+  <li>{{ include.product.pressure_kpa }} kpa</li>
+  <!-- Calculate kPa from psi  -->
+  {% elsif include.product.pressure_psi %}
+  <li>{{ include.product.pressure_psi | divided_by: 0.1450377 | round }} kpa</li>
+  {% endif %}
+
+  <!-- psi -->
+  {% if include.product.pressure_psi %}
+  <li>{{ include.product.pressure_psi }} psi</li>
+  <!-- Calculate psi from kPa  -->
+  {% elsif include.product.pressure_kpa %}
+  <li>{{ include.product.pressure_kpa | times: 0.1450377 | round }} psi</li>
+  {% endif %}
+</ul>

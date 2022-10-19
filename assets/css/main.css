@@ -18,18 +18,18 @@ td, th {
   font-size: 80%;
 }
 
-ul.product--weight {
+ul.product--units {
   list-style: none;
   padding: 0;
   margin: 0;
 
   display: table;
 }
-ul.product--weight li {
+ul.product--units li {
   display: table-cell;
 }
 
-ul.product--weight li:nth-child(even):before {
+ul.product--units li:nth-child(even):before {
   padding: 0 10px;
   content: "|";
 }
