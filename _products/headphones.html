@@ -22,7 +22,7 @@ data_source: headphones.csv
   <tbody>
     {% for headphone in site.data.headphones %}
     <tr>
-      <td>{% include product_name.html product=headphone %}</td>
+      <td data-sort="{{headphone.name}}">{% include product_name.html product=headphone %}</td>
       <td>{{headphone.battery_life}}</td>
       <td>{% include product_weight.html product=headphone %}</td>
       <td>{{headphone.simultaneous_connections}}</td>

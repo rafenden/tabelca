@@ -21,7 +21,7 @@ data_source: backpacks.csv
   <tbody>
     {% for backpack in site.data.backpacks %}
     <tr>
-      <td>{% include product_name.html product=backpack %}</td>
+      <td data-sort="{{backpack.name}}">{% include product_name.html product=backpack %}</td>
       <td>{{backpack.capacity}}</td>
       <td>{% include product_weight.html product=backpack %}</td>
       <td>{{backpack.size}}</td>

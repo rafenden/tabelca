@@ -25,7 +25,7 @@ data_source: nas.csv
   <tbody>
     {% for nas in site.data.nas %}
     <tr>
-      <td>{% include product_name.html product=nas %}</td>
+      <td data-sort="{{nas.name}}">{% include product_name.html product=nas %}</td>
       <td>{{nas.release_year}}</td>
       <td>{{nas.bays}}</td>
       <td>{{nas.hardware_transcoding}}</td>

@@ -33,3 +33,10 @@ ul.product--units li:nth-child(even):before {
   padding: 0 10px;
   content: "|";
 }
+
+.product--discontinued-label {
+  font-size: 70%;
+  text-transform: uppercase;
+  color: #f87357;
+  font-weight: bold;
+}

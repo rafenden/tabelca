@@ -1,3 +1,7 @@
+{% if include.product.discontinued %}
+<div class="product--discontinued-label">discontinued</div>
+{% endif %}
+
 {% if include.product.url %}
 <a href="{{include.product.url}}">{{include.product.name}}</a>
 {% else %}
