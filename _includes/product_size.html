@@ -1,0 +1,17 @@
+<ul class="product--units">
+  <!-- cm -->
+  {% if include.size_cm %}
+  <li>{{ include.size_cm }} cm</li>
+  <!-- Calculate cm from inches  -->
+  {% elsif include.size_in %}
+  <li>{{ include.size_in | divided_by: 0.3937008 | round }} cm</li>
+  {% endif %}
+
+  <!-- inches -->
+  {% if include.size_in %}
+  <li>{{ include.size_in }} in</li>
+  <!-- Calculate inches from cm  -->
+  {% elsif include.size_cm %}
+  <li>{{ include.size_cm | times: 0.3937008 | round }} in</li>
+  {% endif %}
+</ul>

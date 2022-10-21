@@ -1,0 +1,34 @@
+---
+layout: products
+title: Umbrellas
+permalink: /umbrellas
+data_source: umbrellas.csv
+---
+
+<table class="sortable asc">
+  <thead>
+    <tr>
+      <th>Umbrella</th>
+      <th>Canopy Size</th>
+      <th>Closed Length</th>
+      <th>Weight</th>
+      <th>Warranty</th>
+      <th>Price</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for umbrella in site.data.umbrellas %}
+    <tr>
+      <td data-sort="{{umbrella.name}}">{% include product_name.html product=umbrella %}</td>
+      <td>{% include product_size.html size_cm=umbrella.canopy_size_cm %}</td>
+      <td>{% include product_size.html size_cm=umbrella.closed_length_cm %}</td>
+      <td>{% include product_weight.html product=umbrella %}</td>
+      <td>{{umbrella.warranty}}</td>
+      <td data-sort="{{umbrella.price}}">{{umbrella.price}} {{umbrella.price_currency}}</td>
+      <td>{{umbrella.notes}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
