@@ -9,6 +9,7 @@ body {
 }
 
 td, th {
+  font-size: 95%;
   white-space: nowrap;
   padding: 5px 10px;
 }
