@@ -8,7 +8,7 @@ data_source: nas.csv
 <table class="sortable asc">
   <thead>
     <tr>
-      <th>NAS</th>
+      <th colspan="2" data-sort-col="1">NAS</th>
       <th>Release year</th>
       <th>Bays</th>
       <th>Hardware Transcoding</th>
@@ -25,6 +25,7 @@ data_source: nas.csv
   <tbody>
     {% for nas in site.data.nas %}
     <tr>
+      <td class="product--image-col">{% include product_image.html product=nas %}</td>
       <td data-sort="{{nas.name}}">{% include product_name.html product=nas %}</td>
       <td>{{nas.release_year}}</td>
       <td>{{nas.bays}}</td>

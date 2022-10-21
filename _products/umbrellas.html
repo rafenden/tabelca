@@ -5,10 +5,10 @@ permalink: /umbrellas
 data_source: umbrellas.csv
 ---
 
-<table class="sortable asc">
+<table class="tabelca sortable asc">
   <thead>
     <tr>
-      <th>Umbrella</th>
+      <th colspan="2" data-sort-col="1">Umbrella</th>
       <th>Canopy Size</th>
       <th>Closed Length</th>
       <th>Weight</th>
@@ -21,7 +21,8 @@ data_source: umbrellas.csv
   <tbody>
     {% for umbrella in site.data.umbrellas %}
     <tr>
-      <td data-sort="{{umbrella.name}}">{% include product_name.html product=umbrella %}</td>
+      <td class="product--image-col">{% include product_image.html product=umbrella %}</td>
+      <td  data-sort="{{umbrella.name}}">{% include product_name.html product=umbrella %}</td>
       <td>{% include product_size.html size_cm=umbrella.canopy_size_cm %}</td>
       <td>{% include product_size.html size_cm=umbrella.closed_length_cm %}</td>
       <td>{% include product_weight.html product=umbrella %}</td>

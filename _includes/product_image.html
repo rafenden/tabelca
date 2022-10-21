@@ -1,0 +1,27 @@
+{% assign splitted_product_name = include.product.name | split: ' ' %}
+<!--<img data-initials="{% for item in splitted_product_name limit:1 -%}{{ item | slice: 0,4 }}{%- endfor %}"-->
+<!--     alt=""-->
+<!--     class="product&#45;&#45;image"-->
+<!--     src="{{include.product.image}}"-->
+<!--/>-->
+<!--<img data-initials="{% for name_part in splitted_product_name limit:4 -%}{{ name_part | slice: 0 }}{%- endfor %}"-->
+<!--   alt=""-->
+<!--   class="product&#45;&#45;image"-->
+<!--   src="{{include.product.image}}"-->
+<!--/>-->
+
+
+{% capture product_initials %}
+  {% for name_part in splitted_product_name limit:4 -%}
+    {{ name_part | remove: "(" | slice: 0 }}
+  {%- endfor %}
+{% endcapture %}
+
+{% assign product_first4 = include.product.name | truncate: 4, '' %}
+
+
+<img data-initials="{{ include.product.abbreviation | default: product_first4 | upcase }}"
+     alt=""
+     class="product--image"
+     src="{{ include.product.image }}"
+/>

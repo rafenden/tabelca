@@ -8,7 +8,7 @@ data_source: earbuds.csv
 <table class="sortable asc">
   <thead>
     <tr>
-      <th>Earbuds</th>
+      <th colspan="2" data-sort-col="1">Earbuds</th>
       <th>Battery Life (Earbuds)</th>
       <th>Battery Life (Charging Case)</th>
       <th>Weight</th>
@@ -23,6 +23,7 @@ data_source: earbuds.csv
   <tbody>
     {% for earbuds in site.data.earbuds %}
     <tr>
+      <td class="product--image-col">{% include product_image.html product=earbuds %}</td>
       <td data-sort="{{earbuds.name}}">{% include product_name.html product=earbuds %}</td>
       <td>{{earbuds.battery_life}}</td>
       <td>{{earbuds.battery_life_case}}</td>

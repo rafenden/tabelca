@@ -8,7 +8,7 @@ data_source: backpacks.csv
 <table class="sortable asc">
   <thead>
     <tr>
-      <th>Backpack</th>
+      <th colspan="2" data-sort-col="1">Backpack</th>
       <th>Capacity</th>
       <th>Weight</th>
       <th>Size (CM)</th>
@@ -21,6 +21,7 @@ data_source: backpacks.csv
   <tbody>
     {% for backpack in site.data.backpacks %}
     <tr>
+      <td class="product--image-col">{% include product_image.html product=backpack %}</td>
       <td data-sort="{{backpack.name}}">{% include product_name.html product=backpack %}</td>
       <td>{{backpack.capacity}}</td>
       <td>{% include product_weight.html product=backpack %}</td>

@@ -23,9 +23,13 @@ ul.product--units {
   list-style: none;
   padding: 0;
   margin: 0;
-
   display: table;
 }
+
+.tabelca {
+  border-collapse: collapse;
+}
+
 ul.product--units li {
   display: table-cell;
 }
@@ -41,4 +45,37 @@ ul.product--units li:nth-child(even):before {
   text-transform: uppercase;
   color: #f87357;
   font-weight: bold;
+}
+
+.product--image-col {
+  position: sticky;
+  left: 0;
+}
+
+.product--image {
+  width: 40px;
+  height: 40px;
+  max-width: 40px;
+  position: sticky;
+  border: 1px solid gray;
+  padding: 1px;
+  font-size: 80%;
+
+  /*box-shadow: 0 0 10px 5px rgb(255 255 255 / 80%);*/
+}
+
+[data-initials]:before {
+  background: #fff;
+  color: black;
+  opacity: 1;
+  content: attr(data-initials);
+  display: inline-block;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
 }

@@ -8,7 +8,7 @@ data_source: computer_mice.csv
 <table class="sortable asc">
   <thead>
     <tr>
-      <th>Mouse</th>
+      <th colspan="2" data-sort-col="1">Mouse</th>
       <th>Sensor</th>
       <th>DPI (Max)</th>
       <th>Pooling Rate</th>
@@ -22,6 +22,7 @@ data_source: computer_mice.csv
   <tbody>
     {% for mice in site.data.computer_mice %}
     <tr>
+      <td class="product--image-col">{% include product_image.html product=mice %}</td>
       <td data-sort="{{mice.name}}">{% include product_name.html product=mice %}</td>
       <td>{{mice.sensor}}</td>
       <td>{{mice.dpi}} dpi</td>

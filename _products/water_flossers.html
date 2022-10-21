@@ -14,7 +14,7 @@ data_source: water_flossers.csv
 <table class="sortable asc">
   <thead>
     <tr>
-      <th>Water Flosser</th>
+      <th colspan="2" data-sort-col="1">Water Flosser</th>
       <th>Pressure</th>
       <th>Strokes (n/min)</th>
       <th>Tank (ml)</th>
@@ -25,6 +25,7 @@ data_source: water_flossers.csv
   <tbody>
     {% for water_flosser in site.data.water_flossers %}
     <tr>
+      <td class="product--image-col">{% include product_image.html product=water_flosser %}</td>
       <td data-sort="{{water_flosser.name}}">{% include product_name.html product=water_flosser %}</td>
       <td>{% include product_pressure.html product=water_flosser %}</td>
       <td>{{water_flosser.strokes}}</td>

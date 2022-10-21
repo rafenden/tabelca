@@ -1,10 +1,10 @@
-name,pressure_kpa,pressure_psi,strokes,tank,notes,url,amazon,manual,discontinued
-Hangsun Water Flosser HOC400,529,76,1600,150,,,B0798MQLPC,,Yes
-Panasonic EW-DJ10,530,76,1400,165,Runs on AA batteries,https://www.panasonic.com/uk/consumer/personal-health-care/oral-care/ew-dj10.html,,,
-Panasonic EW-DJ40,588,85,,165,,https://www.panasonic.com/uk/consumer/personal-health-care/oral-care/ew-dj40.html,B07DFV6TZZ,,
-Panasonic EW-1511,647,93,1600,200,,https://www.panasonic.com/uk/consumer/personal-health-care/oral-care/ew1511.html,,https://gzhls.at/blob/ldb/d/1/6/f/022dd5ed3eebd079562451a9fc3233881233.pdf,
-Waterpik Sonic-Fusion,,,,,,https://www.waterpik.com/oral-health/lp/sonic-fusion/,,,
-Corayer Water Flosser,,90,1200,,,,B07P6WNN7F,,Yes
-Xiaomi SOOCAS W3,965,140,,230,,https://www.aliexpress.com/wholesale?SearchText=SOOCAS%20W3&opensearch=true,,,
-Waterpik Cordless Freedom Water Flosser,517,75,1200,148,,https://www.waterpik.com/oral-health/products/dental-water-flosser/WF-03CD010/,,,
-Oral-B Aquacare 6,,,,145,,,B07QQMQ685,,
+name,abbreviation,pressure_kpa,pressure_psi,strokes,tank,notes,url,image,amazon,manual,discontinued
+Hangsun Water Flosser HOC400,,529,76,1600,150,,,,B0798MQLPC,,Yes
+Panasonic EW-DJ10,DJ10,530,76,1400,165,Runs on AA batteries,https://www.panasonic.com/uk/consumer/personal-health-care/oral-care/ew-dj10.html,,,,
+Panasonic EW-DJ40,DJ40,588,85,,165,,https://www.panasonic.com/uk/consumer/personal-health-care/oral-care/ew-dj40.html,,B07DFV6TZZ,,
+Panasonic EW-1511,1511,647,93,1600,200,,https://www.panasonic.com/uk/consumer/personal-health-care/oral-care/ew1511.html,,,https://gzhls.at/blob/ldb/d/1/6/f/022dd5ed3eebd079562451a9fc3233881233.pdf,
+Waterpik Sonic-Fusion,SONIC,,,,,,https://www.waterpik.com/oral-health/lp/sonic-fusion/,,,,
+Corayer Water Flosser,,,90,1200,,,,,B07P6WNN7F,,Yes
+Xiaomi SOOCAS W3,,965,140,,230,,https://www.aliexpress.com/wholesale?SearchText=SOOCAS%20W3&opensearch=true,,,,
+Waterpik Cordless Freedom Water Flosser,FREE,517,75,1200,148,,https://www.waterpik.com/oral-health/products/dental-water-flosser/WF-03CD010/,,,,
+Oral-B Aquacare 6,,,,,145,,,,B07QQMQ685,,
