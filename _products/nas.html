@@ -14,9 +14,9 @@ data_source: nas.csv
       <th>Hardware Transcoding</th>
       <th>CPU</th>
       <th>RAM (GB)</th>
-      <th>PCie Speed (x-times)</th>
-      <th>Power Consumption (W)</th>
-      <th>Read Speed (MB/s)</th>
+      <th>PCie Speed</th>
+      <th>Power Consumption</th>
+      <th>Read Speed</th>
       <th>Price</th>
       <th>Notes</th>
     </tr>
@@ -32,9 +32,9 @@ data_source: nas.csv
       <td>{{nas.hardware_transcoding}}</td>
       <td>{{nas.cpu}}</td>
       <td>{{nas.ram}}</td>
-      <td>{{nas.pcie_speed}}</td>
-      <td>{{nas.power_consumption}}</td>
-      <td>{{nas.read_speed}}</td>
+      <td>{% if nas.pcie_speed %}{{nas.pcie_speed}} x{% endif %}</td>
+      <td>{% if nas.power_consumption %}{{nas.power_consumption}} W{% endif %}</td>
+      <td>{% if nas.read_speed %}{{nas.read_speed}} MB/s{% endif %}</td>
       <td data-sort="{{nas.price}}">{{nas.price}} {{nas.price_currency}}</td>
       <td>{{nas.notes}}</td>
     </tr>

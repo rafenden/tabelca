@@ -16,8 +16,8 @@ data_source: water_flossers.csv
     <tr>
       <th colspan="2" data-sort-col="1">Water Flosser</th>
       <th>Pressure</th>
-      <th>Strokes (n/min)</th>
-      <th>Tank (ml)</th>
+      <th>Strokes</th>
+      <th>Tank</th>
       <th>Notes</th>
     </tr>
   </thead>
@@ -28,8 +28,8 @@ data_source: water_flossers.csv
       <td class="product--image-col">{% include product_image.html product=water_flosser %}</td>
       <td data-sort="{{water_flosser.name}}">{% include product_name.html product=water_flosser %}</td>
       <td>{% include product_pressure.html product=water_flosser %}</td>
-      <td>{{water_flosser.strokes}}</td>
-      <td>{{water_flosser.tank}}</td>
+      <td>{% if water_flosser.strokes %}{{water_flosser.strokes}} per min{% endif %}</td>
+      <td>{% if water_flosser.tank %}{{water_flosser.tank}} ml{% endif %}</td>
       <td>{{water_flosser.notes}}</td>
     </tr>
     {% endfor %}
