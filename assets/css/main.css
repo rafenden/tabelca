@@ -8,10 +8,16 @@ body {
   padding-bottom: 5%;
 }
 
-td, th {
+.sortable td, .sortable th {
   font-size: 95%;
   white-space: nowrap;
   padding: 5px 10px;
+}
+
+.sortable th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .product--purchase-links {
