@@ -26,10 +26,6 @@ ul.product--units {
   display: table;
 }
 
-.tabelca {
-  border-collapse: collapse;
-}
-
 ul.product--units li {
   display: table-cell;
 }
@@ -60,8 +56,6 @@ ul.product--units li:nth-child(even):before {
   border: 1px solid gray;
   padding: 1px;
   font-size: 80%;
-
-  /*box-shadow: 0 0 10px 5px rgb(255 255 255 / 80%);*/
 }
 
 [data-initials]:before {
