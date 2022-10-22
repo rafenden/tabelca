@@ -5,9 +5,10 @@
   {%- endfor %}
 {% endcapture %}
 {% assign product_name_first4 = include.product.name | truncate: 4, '' %}
+{% assign product_computed_abbreviation = include.product.abbreviation | default: product_name_first4 | upcase %}
 
-<img data-initials="{{ include.product.abbreviation | default: product_name_first4 | upcase }}"
-     alt=""
-     class="product--image"
-     src="{{ include.product.image }}"
-/>
+{% if include.product.image %}
+<img class="product--image" src="{{ include.product.image }}" alt="{{ product_computed_abbreviation }}"/>
+{% else %}
+<div class="product--abbreviation">{{ include.product.abbreviation | default: product_name_first4 | upcase }}</div>
+{% endif %}
