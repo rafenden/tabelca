@@ -24,7 +24,7 @@ data_source: headphones.csv
     <tr>
       <td class="product--image-col">{% include product_image.html product=headphone %}</td>
       <td data-sort="{{headphone.name}}">{% include product_name.html product=headphone %}</td>
-      <td>{{headphone.battery_life}}</td>
+      <td>{% if headphone.battery_life %}{{headphone.battery_life}} h{% endif %}</td>
       <td>{% include product_weight.html product=headphone %}</td>
       <td>{{headphone.simultaneous_connections}}</td>
       <td>{{headphone.bluetooth_version}}</td>
