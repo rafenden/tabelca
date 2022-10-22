@@ -11,7 +11,11 @@ body {
 .sortable td, .sortable th {
   font-size: 95%;
   white-space: nowrap;
-  padding: 5px 10px;
+}
+
+.sortable td:last-child {
+  white-space: normal;
+  min-width: 400px;
 }
 
 .sortable th {
