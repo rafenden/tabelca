@@ -25,8 +25,8 @@ data_source: computer_mice.csv
       <td class="product--image-col">{% include product_image.html product=mice %}</td>
       <td data-sort="{{mice.name}}">{% include product_name.html product=mice %}</td>
       <td>{{mice.sensor}}</td>
-      <td>{{mice.dpi}} dpi</td>
-      <td>{{mice.pooling_rate}} Hz</td>
+      <td data-sort="{{mice.dpi}}">{{mice.dpi}} dpi</td>
+      <td data-sort="{{mice.pooling_rate}}">{{mice.pooling_rate}} Hz</td>
       <td>
         {% if mice.pooling_rate %}
         {{1.0 | divided_by: mice.pooling_rate | times: 1000 | round: 1}} ms
