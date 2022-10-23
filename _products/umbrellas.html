@@ -22,8 +22,8 @@ data_source: umbrellas.csv
     {% for umbrella in site.data.umbrellas %}
     <tr>
       <td class="product--image-col">{% include product_image.html product=umbrella %}</td>
-      <td  data-sort="{{umbrella.name}}">{% include product_name.html product=umbrella %}</td>
-      <td>{% include product_size.html size_cm=umbrella.canopy_size_cm %}</td>
+      <td data-sort="{{umbrella.name}}">{% include product_name.html product=umbrella %}</td>
+      <td data-sort="{{umbrella.canopy_size_cm}}">{% include product_size.html size_cm=umbrella.canopy_size_cm %}</td>
       <td>{% include product_size.html size_cm=umbrella.closed_length_cm %}</td>
       <td>{% include product_weight.html product=umbrella %}</td>
       <td>{{umbrella.warranty}}</td>
