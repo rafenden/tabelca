@@ -46,6 +46,21 @@ ul.product--units li:not(:first-child):before {
   color: silver;
 }
 
+ul.product--features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+ul.product--features li {
+  display: inline;
+}
+
+ul.product--features li:not(:last-child):after {
+  content: ", ";
+}
+
 .product--discontinued-label {
   font-size: 70%;
   text-transform: uppercase;
