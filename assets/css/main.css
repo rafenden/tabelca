@@ -96,6 +96,25 @@ ul.product__features li:not(:last-child):after {
   display: inline-block;
   font-weight: bold;
   vertical-align: middle;
-  line-height: 40px;
   text-align: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip__text {
+  visibility: hidden;
+  border: 1px solid gray;
+  background: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+}
+
+.tooltip:hover .tooltip__text {
+  visibility: visible;
 }

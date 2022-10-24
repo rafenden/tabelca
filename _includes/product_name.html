@@ -3,20 +3,28 @@
 {% endif %}
 
 {% if include.product.url %}
-<a href="{{include.product.url}}">{{include.product.name}}</a>
+<a href="{{ include.product.url }}">{{ include.product.name }}</a>
 {% else %}
 {{include.product.name}}
 {% endif %}
 
 {% if include.product.manual %}
-(<a href="{{include.product.manual}}">manual</a>)
+(<a href="{{ include.product.manual }}">manual</a>)
 {% endif %}
 
 {% if include.product.amazon %}
 <div class="product__purchase-links">
-  <a href="https://www.amazon.com/gp/product/{{include.product.amazon}}">amazon.com</a>
-  <a href="https://www.amazon.pl/gp/product/{{include.product.amazon}}">amazon.pl</a>
-  <a href="https://www.amazon.co.uk/gp/product/{{include.product.amazon}}">amazon.uk</a>
-  <a href="https://www.amazon.de/gp/product/{{include.product.amazon}}">amazon.de</a>
+  {% for amazon_domain in site.amazon_domains %}
+  <div class="tooltip">
+    <a href="https://www.amazon.{{ amazon_domain.domain }}/gp/product/{{ include.product.amazon }}">{{ amazon_domain.name }}</a>
+    <span class="tooltip__text">
+      {% if amazon_domain.keepa %}
+      <img src="https://graph.keepa.com/pricehistory.png?asin={{ include.product.amazon }}&domain={{ amazon_domain.domain }}" alt="Price history" />
+      {% else %}
+      Price history not available for {{ amazon_domain.name }}
+      {% endif %}
+    </span>
+  </div>
+  {% endfor %}
 </div>
 {% endif %}

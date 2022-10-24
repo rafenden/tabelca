@@ -1,6 +1,19 @@
 title: Tabelca
 email: website@tabelca.com
 description: Compare products and services in tabular data.
+amazon_domains:
+  - domain: com
+    name: amazon.com
+    keepa: true
+  - domain: pl
+    name: amazon.pl
+    keepa: false
+  - domain: co.uk
+    name: amazon.uk
+    keepa: true
+  - domain: de
+    name: amazon.de
+    keepa: true
 baseurl: ""
 url: ""
 markdown: kramdown
