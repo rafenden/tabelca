@@ -40,7 +40,7 @@ ul.product--units li {
   display: table-cell;
 }
 
-ul.product--units li:nth-child(even):before {
+ul.product--units li:not(:first-child):before {
   padding: 0 5px;
   content: "|";
   color: silver;
