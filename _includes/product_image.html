@@ -1,14 +1,8 @@
-{% assign splitted_product_name = include.product.name | split: ' ' %}
-{% capture product_initials %}
-  {% for name_part in splitted_product_name limit:4 -%}
-    {{ name_part | remove: "(" | slice: 0 }}
-  {%- endfor %}
-{% endcapture %}
-{% assign product_name_first4 = include.product.name | truncate: 4, '' %}
+{% assign product_name_first4 = include.product.name | remove: '(' | remove: ' ' | truncate: 5, '' %}
 {% assign product_computed_abbreviation = include.product.abbreviation | default: product_name_first4 | upcase %}
 
 {% if include.product.image %}
 <img class="product--image" src="{{ include.product.image }}" alt="{{ product_computed_abbreviation }}"/>
 {% else %}
-<div class="product--abbreviation">{{ include.product.abbreviation | default: product_name_first4 | upcase }}</div>
+<div class="product--abbreviation">{{ product_computed_abbreviation }}</div>
 {% endif %}
