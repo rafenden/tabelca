@@ -25,7 +25,7 @@ data_source: water_flossers.csv
   <tbody>
     {% for water_flosser in site.data.water_flossers %}
     <tr>
-      <td class="product--image-col">{% include product_image.html product=water_flosser %}</td>
+      <td class="sortable__row__image">{% include product_image.html product=water_flosser %}</td>
       <td data-sort="{{water_flosser.name}}">{% include product_name.html product=water_flosser %}</td>
       <td>{% include product_pressure.html product=water_flosser %}</td>
       <td>{% if water_flosser.strokes %}{{water_flosser.strokes}} per min{% endif %}</td>

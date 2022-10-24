@@ -22,7 +22,7 @@ data_source: computer_mice.csv
   <tbody>
     {% for mice in site.data.computer_mice %}
     <tr>
-      <td class="product--image-col">{% include product_image.html product=mice %}</td>
+      <td class="sortable__row__image">{% include product_image.html product=mice %}</td>
       <td data-sort="{{mice.name}}">{% include product_name.html product=mice %}</td>
       <td>{{mice.sensor}}</td>
       <td data-sort="{{mice.dpi}}">{{mice.dpi}} dpi</td>

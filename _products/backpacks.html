@@ -21,14 +21,14 @@ data_source: backpacks.csv
   <tbody>
     {% for backpack in site.data.backpacks %}
     <tr>
-      <td class="product--image-col">{% include product_image.html product=backpack %}</td>
+      <td class="sortable__row__image">{% include product_image.html product=backpack %}</td>
       <td data-sort="{{backpack.name}}">{% include product_name.html product=backpack %}</td>
       <td>{% if backpack.capacity %}{{backpack.capacity}}L{% endif %}</td>
       <td>{% include product_weight.html product=backpack %}</td>
       <td>{{backpack.size}}</td>
       <td data-sort="{{backpack.price}}">{{backpack.price}} {{backpack.price_currency}}</td>
       <td>{{backpack.warranty}}</td>
-      <td>{{backpack.notes}}</td>
+      <td class="sortable__row--multiline">{{backpack.notes}}</td>
     </tr>
     {% endfor %}
   </tbody>

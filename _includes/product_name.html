@@ -1,5 +1,5 @@
 {% if include.product.discontinued %}
-<div class="product--discontinued-label">discontinued</div>
+<div class="product__discontinued-label">discontinued</div>
 {% endif %}
 
 {% if include.product.url %}
@@ -13,7 +13,7 @@
 {% endif %}
 
 {% if include.product.amazon %}
-<div class="product--purchase-links">
+<div class="product__purchase-links">
   <a href="https://www.amazon.com/gp/product/{{include.product.amazon}}">amazon.com</a>
   <a href="https://www.amazon.pl/gp/product/{{include.product.amazon}}">amazon.pl</a>
   <a href="https://www.amazon.co.uk/gp/product/{{include.product.amazon}}">amazon.uk</a>

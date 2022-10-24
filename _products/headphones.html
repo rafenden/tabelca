@@ -22,7 +22,7 @@ data_source: headphones.csv
   <tbody>
     {% for headphone in site.data.headphones %}
     <tr>
-      <td class="product--image-col">{% include product_image.html product=headphone %}</td>
+      <td class="sortable__row__image">{% include product_image.html product=headphone %}</td>
       <td data-sort="{{headphone.name}}">{% include product_name.html product=headphone %}</td>
       <td>{% if headphone.battery_life %}{{headphone.battery_life}} h{% endif %}</td>
       <td>{% include product_weight.html product=headphone %}</td>

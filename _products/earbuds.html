@@ -23,7 +23,7 @@ data_source: earbuds.csv
   <tbody>
     {% for earbuds in site.data.earbuds %}
     <tr>
-      <td class="product--image-col">{% include product_image.html product=earbuds %}</td>
+      <td class="sortable__row__image">{% include product_image.html product=earbuds %}</td>
       <td data-sort="{{earbuds.name}}">{% include product_name.html product=earbuds %}</td>
       <td>{{earbuds.battery_life}}</td>
       <td>{{earbuds.battery_life_case}}</td>

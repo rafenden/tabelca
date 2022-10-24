@@ -2,7 +2,7 @@
 {% assign product_computed_abbreviation = include.product.abbreviation | default: product_name_first4 | upcase %}
 
 {% if include.product.image %}
-<img class="product--image" src="{{ include.product.image }}" alt="{{ product_computed_abbreviation }}"/>
+<img class="product__image" src="{{ include.product.image }}" alt="{{ product_computed_abbreviation }}"/>
 {% else %}
-<div class="product--abbreviation">{{ product_computed_abbreviation }}</div>
+<div class="product__abbreviation">{{ product_computed_abbreviation }}</div>
 {% endif %}
