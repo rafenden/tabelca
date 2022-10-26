@@ -4,6 +4,3 @@ window.addEventListener('load', function () {
     el.click()
   }
 })
-
-let elements = document.querySelectorAll('table.sortable')
-stickyThead.apply(elements)
