@@ -9,13 +9,15 @@ data_source: computer_mice.csv
   <thead>
     <tr>
       <th colspan="2" data-sort-col="1">Mouse</th>
-      <th data-sort-col="2">Sensor</th>
-      <th data-sort-col="3">DPI (Max)</th>
-      <th data-sort-col="4">Pooling Rate</th>
-      <th data-sort-col="5">Response Time</th>
-      <th data-sort-col="6">Weight</th>
-      <th data-sort-col="7">Price</th>
-      <th data-sort-col="8">Notes</th>
+      <th data-sort-col="2">Buttons</th>
+      <th data-sort-col="3">Sensor</th>
+      <th data-sort-col="4">Max DPI</th>
+      <th data-sort-col="5">Pooling Rate</th>
+      <th data-sort-col="6">Response Time</th>
+      <th data-sort-col="7">Battery</th>
+      <th data-sort-col="8">Weight</th>
+      <th data-sort-col="9">Price</th>
+      <th data-sort-col="10">Notes</th>
     </tr>
   </thead>
 
@@ -24,6 +26,7 @@ data_source: computer_mice.csv
     <tr>
       <td class="sortable__row__image">{% include product_image.html product=mice %}</td>
       <td data-sort="{{mice.name}}">{% include product_name.html product=mice %}</td>
+      <td>{{mice.buttons}}</td>
       <td>{{mice.sensor}}</td>
       <td data-sort="{{mice.dpi}}">{{mice.dpi}} dpi</td>
       <td data-sort="{{mice.pooling_rate}}">{{mice.pooling_rate}} Hz</td>
@@ -32,6 +35,7 @@ data_source: computer_mice.csv
         {{1.0 | divided_by: mice.pooling_rate | times: 1000 | round: 1}} ms
         {% endif %}
       </td>
+      <td>{{mice.battery}}</td>
       <td>{% include product_weight.html product=mice %}</td>
       <td data-sort="{{mice.price}}">{{mice.price}} {{mice.price_currency}}</td>
       <td>{{mice.notes}}</td>

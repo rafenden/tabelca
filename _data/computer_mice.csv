@@ -1,8 +1,8 @@
-name,abbreviation,sensor,dpi,pooling_rate,weight_g,price,price_currency,notes,url,image,amazon,discontinued
-Mad Catz M.O.U.S. 9,MOUS9,Avago 8020 Laser Sensor,990,125,,,,,,,,Yes
-Logitech MX Wireless Performance,PERF,,1500,125,,,,,,,,
-Logitech M705,M705,Laser,1000,125,,,,"Wireless, uses AA batteries",,,,
-Logitech G602,G602,Optical,2500,500,,,,"Wireless, uses AA batteries",,,,
-Logitech MX Master,MASTR,Darkfield,1600,125,,,,"Wireless, built-in battery",,,,
-Microsoft Sculpt Ergonomic Mouse,SCULP,BlueTrack,1000,125,,,,,,,,
-Logitech G604,G604,"Logitech HERO 16, Optical",16000,1000,141,65,USD,"Wireless, uses AA batteries",,,B07W8RKK5R,
+name,abbreviation,buttons,sensor,dpi,pooling_rate,battery,weight_g,price,price_currency,notes,url,image,amazon,discontinued
+Mad Catz M.O.U.S. 9,MOUS9,10,Laser Avago 8020,990,125,AA x1,,,,,,,B009PHSDBM,Yes
+Logitech MX Wireless Performance,PERF,9,Laser,1500,125,AA x1,147,,,,,,B002HWRJBM,Yes
+Logitech M705,M705,6,Laser,1000,125,AA x2,85,,,,,,B003TG75EG,
+Logitech G602,G602,11,Optical,2500,500,AA x2,107,,,,,,B00E4MQODC,
+Logitech MX Master 1,MSTR1,7,Laser Darkfield,1600,125,500 mAh,145,,,,,,B00TZR3WRM,
+Microsoft Sculpt Ergonomic Mouse,SCULP,7,Optical BlueTrack,1000,125,AA x2,150,,,Has ergonomic tilt,,,B00D68ZVY8,
+Logitech G604,G604,11,Optical HERO 16,16000,1000,AA x1,141,65,USD,,,,B07W8RKK5R,
