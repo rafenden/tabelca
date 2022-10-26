@@ -16,6 +16,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
+  text-transform: none;
 }
 
 .sortable tr:first-child {

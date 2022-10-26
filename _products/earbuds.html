@@ -9,11 +9,11 @@ data_source: earbuds.csv
   <thead>
     <tr>
       <th colspan="2" data-sort-col="1">Earbuds</th>
-      <th data-sort-col="2">Battery Life (Earbuds)</th>
-      <th data-sort-col="3">Battery Life (Charging Case)</th>
+      <th data-sort-col="2">Runtime</th>
+      <th data-sort-col="3">Runtime with Case</th>
       <th data-sort-col="4">Weight</th>
       <th data-sort-col="5">Simultaneous Connections</th>
-      <th data-sort-col="6">Bluetooth Version</th>
+      <th data-sort-col="6">Bluetooth Ver.</th>
       <th data-sort-col="7">Bluetooth Class</th>
       <th data-sort-col="8">Price</th>
       <th data-sort-col="9">Notes</th>
@@ -25,8 +25,8 @@ data_source: earbuds.csv
     <tr>
       <td class="sortable__row__image">{% include product_image.html product=earbuds %}</td>
       <td data-sort="{{earbuds.name}}">{% include product_name.html product=earbuds %}</td>
-      <td>{{earbuds.battery_life}}</td>
-      <td>{{earbuds.battery_life_case}}</td>
+      <td>{% if earbuds.runtime %}{{earbuds.runtime}} h{% endif %}</td>
+      <td>{% if earbuds.runtime_case %}{{earbuds.runtime_case}} h{% endif %}</td>
       <td>{% include product_weight.html product=earbuds %}</td>
       <td>{{earbuds.simultaneous_connections}}</td>
       <td>{{earbuds.bluetooth_version}}</td>

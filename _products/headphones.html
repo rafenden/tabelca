@@ -9,7 +9,7 @@ data_source: headphones.csv
   <thead>
     <tr>
       <th colspan="2" data-sort-col="1">Headphones</th>
-      <th data-sort-col="2">Battery Life</th>
+      <th data-sort-col="2">Runtime</th>
       <th data-sort-col="3">Weight</th>
       <th data-sort-col="4">Simultaneous Connections</th>
       <th data-sort-col="5">Bluetooth Version</th>
@@ -24,7 +24,7 @@ data_source: headphones.csv
     <tr>
       <td class="sortable__row__image">{% include product_image.html product=headphone %}</td>
       <td data-sort="{{headphone.name}}">{% include product_name.html product=headphone %}</td>
-      <td>{% if headphone.battery_life %}{{headphone.battery_life}} h{% endif %}</td>
+      <td>{% if headphone.runtime %}{{headphone.runtime}} h{% endif %}</td>
       <td>{% include product_weight.html product=headphone %}</td>
       <td>{{headphone.simultaneous_connections}}</td>
       <td>{{headphone.bluetooth_version}}</td>

@@ -1,4 +1,4 @@
-name,abbreviation,battery_life,weight_g,simultaneous_connections,bluetooth_version,bluetooth_class,price,price_currency,notes,url,image
+name,abbreviation,runtime,weight_g,simultaneous_connections,bluetooth_version,bluetooth_class,price,price_currency,notes,url,image
 Bose N700 HS,N700,20,250,2,5,,349.95,GBP,Great microphone,https://www.bose.co.uk/en_gb/products/headphones/noise_cancelling_headphones/noise-cancelling-headphones-700.html#v=noise_cancelling_headphones_700_black,
 Bose QC35 II,QC35,20,240,2,,,299.95,GBP,,https://www.bose.co.uk/en_gb/products/headphones/over_ear_headphones/quietcomfort-35-wireless-ii.html,
 Sennheiser PXC 550,P550,30,227,2,4.2,1,225,GBP,"Earcups might be small for some, touch controls, good quality microphone",https://en-us.sennheiser.com/wireless-headphone-headset-bluetooth-noise-cancelling-pxc-550-travel,
