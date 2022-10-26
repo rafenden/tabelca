@@ -12,10 +12,9 @@ data_source: headphones.csv
       <th data-sort-col="2">Runtime</th>
       <th data-sort-col="3">Weight</th>
       <th data-sort-col="4">Simultaneous Connections</th>
-      <th data-sort-col="5">Bluetooth Version</th>
-      <th data-sort-col="6">Bluetooth Class</th>
-      <th data-sort-col="7">Price</th>
-      <th data-sort-col="8">Notes</th>
+      <th data-sort-col="5">Bluetooth</th>
+      <th data-sort-col="6">Price</th>
+      <th data-sort-col="7">Notes</th>
     </tr>
   </thead>
 
@@ -27,8 +26,12 @@ data_source: headphones.csv
       <td>{% if headphone.runtime %}{{headphone.runtime}} h{% endif %}</td>
       <td>{% include product_weight.html product=headphone %}</td>
       <td>{{headphone.simultaneous_connections}}</td>
-      <td>{{headphone.bluetooth_version}}</td>
-      <td>{{headphone.bluetooth_class}}</td>
+      <td>
+        <ul class="product__units">
+          {% if headphone.bluetooth_version %}<li>{{headphone.bluetooth_version | plus:0.0}}</li>{% endif %}
+          {% if headphone.bluetooth_class %}<li>Class {{headphone.bluetooth_class}}</li>{% endif %}
+        </ul>
+      </td>
       <td data-sort="{{headphone.price}}">{{headphone.price}} {{headphone.price_currency}}</td>
       <td>{{headphone.notes}}</td>
     </tr>

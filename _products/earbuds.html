@@ -13,10 +13,9 @@ data_source: earbuds.csv
       <th data-sort-col="3">Runtime with Case</th>
       <th data-sort-col="4">Weight</th>
       <th data-sort-col="5">Simultaneous Connections</th>
-      <th data-sort-col="6">Bluetooth Ver.</th>
-      <th data-sort-col="7">Bluetooth Class</th>
-      <th data-sort-col="8">Price</th>
-      <th data-sort-col="9">Notes</th>
+      <th data-sort-col="6">Bluetooth</th>
+      <th data-sort-col="7">Price</th>
+      <th data-sort-col="8">Notes</th>
     </tr>
   </thead>
 
@@ -29,8 +28,12 @@ data_source: earbuds.csv
       <td>{% if earbuds.runtime_case %}{{earbuds.runtime_case}} h{% endif %}</td>
       <td>{% include product_weight.html product=earbuds %}</td>
       <td>{{earbuds.simultaneous_connections}}</td>
-      <td>{{earbuds.bluetooth_version}}</td>
-      <td>{{earbuds.bluetooth_class}}</td>
+      <td>
+        <ul class="product__units">
+          {% if earbuds.bluetooth_version %}<li>{{earbuds.bluetooth_version | plus:0.0}}</li>{% endif %}
+          {% if earbuds.bluetooth_class %}<li>Class {{earbuds.bluetooth_class}}</li>{% endif %}
+        </ul>
+      </td>
       <td data-sort="{{earbuds.price}}">{{earbuds.price}} {{earbuds.price_currency}}</td>
       <td>{{earbuds.notes}}</td>
     </tr>
