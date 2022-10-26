@@ -18,6 +18,10 @@ body {
   z-index: 1;
 }
 
+.sortable tr:first-child {
+  background: gray;
+}
+
 .sortable td, .sortable th {
   font-size: 95%;
   white-space: nowrap;
