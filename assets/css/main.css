@@ -30,10 +30,7 @@ body {
 
 .sortable .sortable__row--multiline {
   white-space: normal;
-}
-
-.sortable .sortable__row--multiline:last-child {
-  min-width: 400px;
+  min-width: 300px;
 }
 
 .product__purchase-links {
