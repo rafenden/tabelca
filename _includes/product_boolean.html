@@ -1,0 +1,7 @@
+{% if include.parameter contains 'Yes' %}
+<div class="product__boolean--yes">{{ include.parameter }}</div>
+{% elsif include.parameter contains 'No' %}
+<div class="product__boolean--no">{{ include.parameter }}</div>
+{% else %}
+{{ include.parameter }}
+{% endif %}

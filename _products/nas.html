@@ -29,7 +29,7 @@ data_source: nas.csv
       <td data-sort="{{nas.name}}">{% include product_name.html product=nas %}</td>
       <td>{{nas.release_year}}</td>
       <td>{{nas.bays}}</td>
-      <td>{{nas.hardware_transcoding}}</td>
+      <td>{% include product_boolean.html parameter=nas.hardware_transcoding %}</td>
       <td>{{nas.cpu}}</td>
       <td>{{nas.ram}}</td>
       <td>{% if nas.pcie_speed %}{{nas.pcie_speed}} x{% endif %}</td>

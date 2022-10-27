@@ -105,6 +105,14 @@ ul.product__features li:not(:last-child):after {
   text-align: center;
 }
 
+.product__boolean--yes {
+  color: green;
+}
+
+.product__boolean--no {
+  color: red;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
