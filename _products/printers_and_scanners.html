@@ -1,0 +1,67 @@
+---
+layout: products
+title: Printers & Scanners
+permalink: /printers-and-scanners
+data_source: printers_and_scanners.csv
+---
+
+<table class="sortable asc">
+  <thead>
+    <tr>
+      <th colspan="2" data-sort-col="1">Device</th>
+      <th data-sort-col="2">Technology</th>
+      <th data-sort-col="3">WiFi</th>
+      <th data-sort-col="4">Color Print</th>
+      <th data-sort-col="5">Duplex Print</th>
+      <th data-sort-col="6">Print Speed</th>
+      <th data-sort-col="7">Print Resolution</th>
+      <th data-sort-col="8">Duplex ADF Scanner</th>
+      <th data-sort-col="9">ADF Scan Resolution</th>
+      <th data-sort-col="10">Flatbed Scan Resolution</th>
+      <th data-sort-col="11">OCR Languages</th>
+      <th data-sort-col="12">Weight</th>
+      <th data-sort-col="13">Size</th>
+      <th data-sort-col="14"><abbr title="B&W page yeld with the included cartridge">Cartridge Yield</abbr></th>
+      <th data-sort-col="15"><abbr title="Average cost of black cartridge">Cartridge Cost</abbr></th>
+      <th data-sort-col="16">Price</th>
+      <th data-sort-col="17">Notes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for product in site.data.printers_and_scanners %}
+    <tr>
+      <td class="sortable__row__image">{% include product_image.html product=product %}</td>
+      <td data-sort="{{product.name}}">{% include product_name.html product=product %}</td>
+      <td>{{product.technology}}</td>
+      <td>{% include product_boolean.html parameter=product.wifi %}</td>
+      <td>{% include product_boolean.html parameter=product.print_in_color %}</td>
+      <td>{% include product_boolean.html parameter=product.print_duplex %}</td>
+      <td>{% if product.print_speed %}{{product.print_speed}} pages/min{% endif %}</td>
+      <td>{% if product.print_dpi %}{{product.print_dpi}} dpi{% endif %}</td>
+      <td>{% include product_boolean.html parameter=product.adf_scan_duplex %}</td>
+      <td>
+        {% if product.adf_scan_dpi and product.adf_scan_dpi != 'n/a' %}
+          {{product.adf_scan_dpi}} dpi
+        {% else %}
+          n/a
+        {% endif %}
+      </td>
+      <td>
+        {% if product.flat_scan_dpi and product.flat_scan_dpi != 'n/a' %}
+          {{product.flat_scan_dpi}} dpi
+        {% else %}
+          n/a
+        {% endif %}
+      </td>
+      <td>{{product.ocr_languages}}</td>
+      <td>{% include product_weight.html product=product %}</td>
+      <td>{% if product.size_cm %}{{product.size_cm}} cm{% endif %}</td>
+      <td>{% if product.cartridge_yeld %}{{product.cartridge_yeld}} pages{% endif %}</td>
+      <td data-sort="{{product.cartridge_price}}">{{product.cartridge_price}} {{product.cartridge_price_currency}}</td>
+      <td data-sort="{{product.price}}">{{product.price}} {{product.price_currency}}</td>
+      <td>{{product.notes}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
