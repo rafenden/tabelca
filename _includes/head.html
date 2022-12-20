@@ -1,10 +1,17 @@
+{% capture description %}
+  {% if page.layout == 'products' %}
+    Compare {{ page.title }} in a table.
+  {% else %}
+    {{ page.excerpt | default:site.description }}
+  {% endif %}
+{% endcapture %}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <title>{{ page.title | default: site.title | escape }}</title>
+  <meta name="description" content="{{ description | strip_newlines | strip | escape }}">
   <link rel="shortcut icon" type="image/jpg" href="{{ '/assets/images/favicon.png' | relative_url }}"/>
 
   <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable/sortable.min.css" rel="stylesheet" />
