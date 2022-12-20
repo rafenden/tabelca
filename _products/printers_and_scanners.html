@@ -8,7 +8,7 @@ data_source: printers_and_scanners.csv
 <table class="sortable asc">
   <thead>
     <tr>
-      <th colspan="2" data-sort-col="1">Device</th>
+      <th data-sort-col="1" colspan="2">Device</th>
       <th data-sort-col="2">Technology</th>
       <th data-sort-col="3">WiFi</th>
       <th data-sort-col="4">Color Print</th>
@@ -37,17 +37,17 @@ data_source: printers_and_scanners.csv
       <td>{% include product_boolean.html parameter=product.wifi %}</td>
       <td>{% include product_boolean.html parameter=product.print_in_color %}</td>
       <td>{% include product_boolean.html parameter=product.print_duplex %}</td>
-      <td>{% if product.print_speed %}{{product.print_speed}} pages/min{% endif %}</td>
-      <td>{% if product.print_dpi %}{{product.print_dpi}} dpi{% endif %}</td>
+      <td data-sort="{{product.print_speed}}">{% if product.print_speed %}{{product.print_speed}} pages/min{% endif %}</td>
+      <td data-sort="{{product.print_dpi | replace: ' x ', ''}}">{% if product.print_dpi %}{{product.print_dpi}} dpi{% endif %}</td>
       <td>{% include product_boolean.html parameter=product.adf_scan_duplex %}</td>
-      <td>
+      <td data-sort="{{product.adf_scan_dpi | replace: ' x ', ''}}">
         {% if product.adf_scan_dpi and product.adf_scan_dpi != 'n/a' %}
           {{product.adf_scan_dpi}} dpi
         {% else %}
           n/a
         {% endif %}
       </td>
-      <td>
+      <td data-sort="{{product.flat_scan_dpi | replace: ' x ', ''}}">
         {% if product.flat_scan_dpi and product.flat_scan_dpi != 'n/a' %}
           {{product.flat_scan_dpi}} dpi
         {% else %}

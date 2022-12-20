@@ -1,11 +1,11 @@
-name,abbreviation,technology,wifi,print_in_color,print_duplex,print_speed,print_dpi,adf_scan_duplex,flat_scan_dpi,adf_scan_dpi,ocr_languages,weight_kg,weight_lb,size_cm,cartridge_yeld,cartridge_price,cartridge_price_currency,price,price_currency,warranty,notes,url,image,amazon,discontinued
-Brother DCP-L3550CDW,D3550,Laser,yes,yes,yes,18,600 x 2400,no,1200 x 2400,600 x 600,,23.2,,41 x 47 x 41,1000,45,EUR,394,GBP,1,,https://www.brother.co.uk/printers/laser-printers/dcp-l3550cdw,,,
-Brother MFC-L3750CDW,M3750,Laser,yes,yes,yes,24,600 x 2400,no,1200 x 2400,600 x 600,,23.4,,41 x 47 x 41,1000,,,430,GBP,1,,https://www.brother.co.uk/printers/laser-printers/mfc-l3750cdw,,,
-Brother MFC-L3770CDW,M3770,Laser,yes,yes,yes,24,600 x 2400,yes,1200 x 2400,600 x 600,,24.5,,41 x 50 x 41,1000,,,538,GBP,1,,https://www.brother.co.uk/printers/laser-printers/mfc-l3770cdw,,,
-Canon PIXMA TR150,TR150,Ink,yes,yes,,9,4800 x 1200,no,n/a,n/a,n/a,,,,,,,,,,,https://www.usa.canon.com/shop/p/pixma-tr150,,,
-Canon i-SENSYS MF752Cdw,MF752,Laser,yes,yes,,33,1200 x 1200,,9600 x 9600,600 x 600,,,,,,,,,,,,https://www.canon.co.uk/support/consumer_products/products/fax__multifunctionals/laser/laserbase_mf_series/i-sensys_mf752cdw.html,,,
-Canon i-SENSYS MF443DW,MF443,Laser,yes,no,yes,38,1200 x 1200,yes,600 x 600,600 x 600,,17.2,,,,,,,,,,https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/laser/laserbase_mf_series/i-sensys-mf443dw.html,,,
-HP Color LaserJet Pro MFP M183fw,M183,Laser,yes,yes,no,17,600 x 600,no,1200 x 1200,300 x 300,,16.3,,42 x 38 x 34,,,,,,,,https://www.hp.com/emea_africa-en/products/printers/product-details/29448704,,,
-HP LaserJet Pro MFP M428fdw,M428,Laser,yes,no,yes,40,1200 x 1200,yes,1200 x 1200,600 x 600,,,27.78,42 x 39 x 32,,,,,,,,https://www.hp.com/us-en/shop/pdp/hp-laserjet-pro-mfp-m428fdw,,,
-Epson WF-110W,WF110,Ink,yes,yes,no,14,5760 x 1440,no,n/a,n/a,n/a,1.6,,30 x 15 x 6,,,,199.99,GBP,1,Portable printer with built-in battery,https://www.epson.co.uk/en_GB/products/printers/inkjet/microbusiness/workforce-wf-110w/p/28459,,,
-HP Tango X,TANGO,Ink,yes,yes,no,11,4800 x 1200,no,n/a,n/a,n/a,,7.5,,,,,159,USD,1,Small and pretty printer,https://www.hp.com/us-en/shop/pdp/hp-tango-x,,B07HRG69PR,yes
+name,abbreviation,technology,wifi,print_in_color,print_duplex,print_speed,print_dpi,adf_scan_duplex,flat_scan_dpi,adf_scan_dpi,ocr_languages,weight_kg,weight_lb,size_cm,cartridge_yeld,cartridge_price,cartridge_price_currency,price,price_currency,warranty,Notes,url,image,amazon,discontinued
+Brother DCP-L3550CDW,D3550,Laser,Yes,Yes,Yes,18,600 x 2400,No,1200 x 2400,600 x 600,,23.2,,41 x 47 x 41,1000,,,394,GBP,1,,https://www.brother.co.uk/printers/laser-printers/dcp-l3550cdw,,,
+Brother MFC-L3750CDW,M3750,Laser,Yes,Yes,Yes,24,600 x 2400,No,1200 x 2400,600 x 600,,23.4,,41 x 47 x 41,1000,,,430,GBP,1,,https://www.brother.co.uk/printers/laser-printers/mfc-l3750cdw,,,
+Brother MFC-L3770CDW,M3770,Laser,Yes,Yes,Yes,24,600 x 2400,Yes,1200 x 2400,600 x 600,,24.5,,41 x 50 x 41,1000,,,538,GBP,1,,https://www.brother.co.uk/printers/laser-printers/mfc-l3770cdw,,,
+Canon PIXMA TR150,TR150,Ink,Yes,Yes,,9,4800 x 1200,No,n/a,n/a,n/a,,,,,,,,,,,https://www.usa.canon.com/shop/p/pixma-tr150,,,
+Canon i-SENSYS MF752Cdw,MF752,Laser,Yes,Yes,,33,1200 x 1200,,9600 x 9600,600 x 600,,,,,,,,,,,,https://www.canon.co.uk/support/consumer_products/products/fax__multifunctionals/laser/laserbase_mf_series/i-sensys_mf752cdw.html,,,
+Canon i-SENSYS MF443DW,MF443,Laser,Yes,No,Yes,38,1200 x 1200,Yes,600 x 600,600 x 600,,17.2,,,,,,,,,,https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/laser/laserbase_mf_series/i-sensys-mf443dw.html,,,
+HP Color LaserJet Pro MFP M183fw,M183,Laser,Yes,Yes,No,17,600 x 600,No,1200 x 1200,300 x 300,,16.3,,42 x 38 x 34,,,,,,,,https://www.hp.com/emea_africa-en/products/printers/product-details/29448704,,,
+HP LaserJet Pro MFP M428fdw,M428,Laser,Yes,No,Yes,40,1200 x 1200,Yes,1200 x 1200,600 x 600,,,27.78,42 x 39 x 32,,,,,,,,https://www.hp.com/us-en/shop/pdp/hp-laserjet-pro-mfp-m428fdw,,,
+Epson WF-110W,WF110,Ink,Yes,Yes,No,14,5760 x 1440,No,n/a,n/a,n/a,1.6,,30 x 15 x 6,,,,199.99,GBP,1,Portable printer with built-in battery,https://www.epson.co.uk/en_GB/products/printers/inkjet/microbusiness/workforce-wf-110w/p/28459,,,
+HP Tango X,TANGO,Ink,Yes,Yes,No,11,4800 x 1200,No,n/a,n/a,n/a,,7.5,,,,,159,USD,1,Small and pretty printer,https://www.hp.com/us-en/shop/pdp/hp-tango-x,,B07HRG69PR,Yes
