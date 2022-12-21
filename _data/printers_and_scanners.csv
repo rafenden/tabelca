@@ -1,4 +1,4 @@
-name,abbreviation,technology,wifi,print_in_color,print_duplex,print_speed,print_dpi,adf_scan_duplex,flat_scan_dpi,adf_scan_dpi,ocr_languages,weight_kg,weight_lb,size_cm,cartridge_yeld,cartridge_price,cartridge_price_currency,price,price_currency,warranty,Notes,url,image,amazon,discontinued
+name,abbreviation,technology,wifi,print_in_color,print_duplex,print_speed,print_dpi,adf_scan_duplex,flat_scan_dpi,adf_scan_dpi,ocr_languages,weight_kg,weight_lb,size_cm,cartridge_yeld,cartridge_price,cartridge_price_currency,price,price_currency,warranty,notes,url,image,amazon,discontinued
 Brother DCP-L3550CDW,D3550,Laser,Yes,Yes,Yes,18,600 x 2400,No,1200 x 2400,600 x 600,,23.2,,41 x 47 x 41,1000,44,USD,394,GBP,1,,https://www.brother.co.uk/printers/laser-printers/dcp-l3550cdw,,,
 Brother MFC-L3750CDW,M3750,Laser,Yes,Yes,Yes,24,600 x 2400,No,1200 x 2400,600 x 600,,23.4,,41 x 47 x 41,1000,20,USD,430,GBP,1,,https://www.brother.co.uk/printers/laser-printers/mfc-l3750cdw,,,
 Brother MFC-L3770CDW,M3770,Laser,Yes,Yes,Yes,24,600 x 2400,Yes,1200 x 2400,600 x 600,,24.5,,41 x 50 x 41,1000,20,USD,538,GBP,1,,https://www.brother.co.uk/printers/laser-printers/mfc-l3770cdw,,,
