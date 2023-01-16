@@ -6,7 +6,7 @@ layout: default
   {%- for product in site.products -%}
   <li>
     <h3>
-      <a class="product-link" href="{{ product.url | prepend: site.baseurl }}">
+      <a href="{{ product.url | prepend: site.baseurl }}">
         {{ product.title | escape }}
       </a>
     </h3>
