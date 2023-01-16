@@ -25,9 +25,8 @@ h1 a {
   text-decoration: none;
   display: block;
   text-transform: lowercase;
-  text-align: center;
   margin-bottom: -12px;
-  padding-top: 20px;
+  padding: 20px 10px 0 5px;
 }
 
 h1 a:active, h1 a:focus {
@@ -42,9 +41,8 @@ h1 a:active, h1 a:focus {
 }
 
 .site__description {
-  text-align: center;
   display: block;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 main {
@@ -203,16 +201,14 @@ h3 {
   .product-list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
   }
 
   .product-list li {
-    flex: 1 0 50%
+    flex: 1 0 25%
   }
 
   .product-list li:last-child:not(:nth-last-child(2)) {
-    max-width: 50%;
-    margin: auto;
+    max-width: 25%;
   }
 }
 
