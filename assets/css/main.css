@@ -24,13 +24,13 @@ h1:hover {
 }
 
 h1 a {
-  font-size: 48px;
+  font-size: 60px;
   color: var(--cobalt-color);
   text-decoration: none;
   display: block;
   text-transform: lowercase;
   text-align: center;
-  margin-bottom: -12px;
+  margin-bottom: -15px;
   padding-top: 50px;
 }
 
