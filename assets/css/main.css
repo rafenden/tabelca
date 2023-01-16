@@ -19,6 +19,10 @@ h1 {
   background: repeating-linear-gradient(-45deg, #f3f3f3, #f3f3f3 10px, #fff 10px, #fff 20px) 100%;
 }
 
+h1:hover {
+  border-color: black;
+}
+
 h1 a {
   font-size: 48px;
   color: var(--cobalt-color);
