@@ -6,6 +6,9 @@ Compare products and services in tabular data.
 
 1. Install dependencies
 ```shell
+brew install rbenv 
+rbenv install 2.7.3
+gem install bundler
 bundle install --path vendor/bundle
 ```
 2. Start the server
