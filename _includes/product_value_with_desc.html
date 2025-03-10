@@ -1,11 +1,9 @@
 {% assign param_parts = include.parameter | split: " (" %}
-{% assign boolean_value = param_parts[0] %}
+{% assign value = param_parts[0] %}
 {% assign description = param_parts[1] | replace: ")", "" %}
 
-{% if boolean_value == 'Yes' %}
-  <div class="product__boolean--yes">Yes</div>
-{% elsif boolean_value == 'No' %}
-  <div class="product__boolean--no">No</div>
+{% if value %}
+  {{ value }}
 {% endif %}
 
 {% if description %}

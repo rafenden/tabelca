@@ -31,7 +31,7 @@ data_source: nas.csv
       <td>{{nas.bays}}</td>
       <td>{% include product_boolean.html parameter=nas.hardware_transcoding %}</td>
       <td>{{nas.cpu}}</td>
-      <td>{{nas.ram}}</td>
+      <td>{% include product_value_with_desc.html parameter=nas.ram %}</td>
       <td data-sort="{{nas.pcie_speed}}">{% if nas.pcie_speed %}{{nas.pcie_speed}} x{% endif %}</td>
       <td>{% if nas.power_consumption %}{{nas.power_consumption}} W{% endif %}</td>
       <td>{% if nas.read_speed %}{{nas.read_speed}} MB/s{% endif %}</td>

@@ -190,6 +190,10 @@ ul.product__features li:not(:last-child):after {
   color: red;
 }
 
+.product__boolean--description {
+  font-size: 80%;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
